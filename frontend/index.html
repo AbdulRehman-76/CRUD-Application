@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+  <div class="container">
+    <h2>Add User</h2>
+
+    <input id="name" type="text" placeholder="Name">
+    <input id="age" type="number" placeholder="Age">
+    <input id="weight" type="number" placeholder="Weight">
+    <button onclick="addUser()">Save</button>
+
+    <hr>
+
+    <button onclick="getUsers()" style="background-color: #28a745;">Fetch Users</button>
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
