@@ -3,7 +3,7 @@ async function addUser() {
   const age = document.getElementById("age").value;
   const weight = document.getElementById("weight").value;
     console.log("add");
-  await fetch("http://localhost:5500/api/users", {
+  await fetch('/api/users'), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, age, weight })
@@ -14,7 +14,7 @@ async function addUser() {
 
 async function getUsers() {
   console.log("Get Script");
-  const res = await fetch("http://localhost:5500/api/users");
+  const res = await fetch('/api/users');
   const users = await res.json();
 
   const list = document.getElementById("list");
