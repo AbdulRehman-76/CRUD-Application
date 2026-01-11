@@ -4,5 +4,6 @@ const dotenv = require('dotenv');
 const port = process.env.PORT;
 
 app.listen(port, () => {
-  console.log("Server running on port 5500");
+  console.log("Server running on port 4000");
 });
+module.exports = app;
